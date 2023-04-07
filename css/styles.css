@@ -1,0 +1,961 @@
+/* HOJA DE ESTILOS "EL SISTEMA SOLAR" */
+
+/* ********** ********** ********** ********** ********** */
+/*  ESTAS INSTRUCCIONES PERMITEN CAMBIAR EN BLOQUE EL COLOR DE LOS ELEMENTOS DEL 
+    SITIO WEB  */
+:root {
+    --fondo_general_1: hsla(205,85%,88%,0.5);
+    --fondo_general_2: hsla(205,15%,88%,0.5);
+    --menu_horizontal_1: hsla(205,95%,45%,1.00);
+    --menu_horizontal_2: hsla(205,95%,35%,1.00);
+    --menu_horizontal_3: hsla(205,25%,55%,1.00);
+    --menu_horizontal_4: hsla(205,25%,45%,1.00);
+    --menu_horizontal_5: hsla(225,95%,45%,1.00);
+    --menu_horizontal_6: hsla(225,95%,35%,1.00);
+    --menu_vertical_1: hsla(205,5%,45%,1.00);
+    --menu_vertical_2: hsla(205,5%,15%,1.00);
+    --secundario_1: hsla(205,95%,90%,0.5);	
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  ESTAS INSTRUCCIONES INDICAN COMO SE COMPORTARA LA "SECCIÓN ADAPTABLE AL ANCHO 
+    DE LA PANTALLA", DEPENDIENDO DEL ANCHO DE LA MISMA  */
+
+/*  EL SELECTOR [class*="columna-"] SE APLICA A TODOS LOS ELEMENTOS DE TIPO "class"
+    QUE INCLUYEN EL VALOR columna-" COMO PARTE DE SU NOMBRE  */
+[class*="columna-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
+/*  DISPOSITIVOS EXTRA PEQUEÑOS (DE 600px Y MENOS)  */
+[class*="columna-"] {
+    width: 100%;
+}
+
+/*  DISPOSITIVOS PEQUEÑOS (DE 600px A 767px)  */
+@media only screen and (min-width: 600px) {
+    .columna-p-1 {width: 6.25%;}
+    .columna-p-2 {width: 12.5%;}
+    .columna-p-3 {width: 18.75%;}
+    .columna-p-4 {width: 25%;}
+    .columna-p-5 {width: 31.25%;}
+    .columna-p-6 {width: 37.5%;}
+    .columna-p-7 {width: 43.75%;}
+    .columna-p-8 {width: 50%;}
+    .columna-p-9 {width: 56.25%;}
+    .columna-p-10 {width: 62.5%;}
+    .columna-p-11 {width: 68.75%;}
+    .columna-p-12 {width: 75%;}
+    .columna-p-13 {width: 81.25%;}
+    .columna-p-14 {width: 87.5%;}
+    .columna-p-15 {width: 93.75%;}
+    .columna-p-16 {width: 100%;}
+}
+
+/*  DISPOSITIVOS MEDIANOS (DE 768px A 991px)  */
+@media only screen and (min-width: 768px) {
+    .columna-m-1 {width: 6.25%;}
+    .columna-m-2 {width: 12.5%;}
+    .columna-m-3 {width: 18.75%;}
+    .columna-m-4 {width: 25%;}
+    .columna-m-5 {width: 31.25%;}
+    .columna-m-6 {width: 37.5%;}
+    .columna-m-7 {width: 43.75%;}
+    .columna-m-8 {width: 50%;}
+    .columna-m-9 {width: 56.25%;}
+    .columna-m-10 {width: 62.5%;}
+    .columna-m-11 {width: 68.75%;}
+    .columna-m-12 {width: 75%;}
+    .columna-m-13 {width: 81.25%;}
+    .columna-m-14 {width: 87.5%;}
+    .columna-m-15 {width: 93.75%;}
+    .columna-m-16 {width: 100%;}
+}
+
+/*  DISPOSITIVOS GRANDES (DE 992px A 1199px)  */
+@media only screen and (min-width: 992px) {
+    .columna-g-1 {width: 6.25%;}
+    .columna-g-2 {width: 12.5%;}
+    .columna-g-3 {width: 18.75%;}
+    .columna-g-4 {width: 25%;}
+    .columna-g-5 {width: 31.25%;}
+    .columna-g-6 {width: 37.5%;}
+    .columna-g-7 {width: 43.75%;}
+    .columna-g-8 {width: 50%;}
+    .columna-g-9 {width: 56.25%;}
+    .columna-g-10 {width: 62.5%;}
+    .columna-g-11 {width: 68.75%;}
+    .columna-g-12 {width: 75%;}
+    .columna-g-13 {width: 81.25%;}
+    .columna-g-14 {width: 87.5%;}
+    .columna-g-15 {width: 93.75%;}
+    .columna-g-16 {width: 100%;}
+}
+
+/*  DISPOSITIVOS EXTRA GRANDES (DE 1200px A 1399px)  */
+@media only screen and (min-width: 1200px) {
+    .columna-eg-1 {width: 6.25%;}
+    .columna-eg-2 {width: 12.5%;}
+    .columna-eg-3 {width: 18.75%;}
+    .columna-eg-4 {width: 25%;}
+    .columna-eg-5 {width: 31.25%;}
+    .columna-eg-6 {width: 37.5%;}
+    .columna-eg-7 {width: 43.75%;}
+    .columna-eg-8 {width: 50%;}
+    .columna-eg-9 {width: 56.25%;}
+    .columna-eg-10 {width: 62.5%;}
+    .columna-eg-11 {width: 68.75%;}
+    .columna-eg-12 {width: 75%;}
+    .columna-eg-13 {width: 81.25%;}
+    .columna-eg-14 {width: 87.5%;}
+    .columna-eg-15 {width: 93.75%;}
+    .columna-eg-16 {width: 100%;}
+}
+
+/*  ESTAS INSTRUCCIONES PERMITEN QUE LAS SECCIONES QUE SE ENCUENTRAN ANTES Y DESPUÉS 
+    DE LA "SECCIÓN ADAPTABLE AL ANCHO DE LA PANTALLA" SE MANTENGAN EN SU LUGAR  */
+.secc-adapta::before,
+.secc-adapta::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  ESTAS SON INSTRUCCIONES GENERALES Y SE APLICAN A TODO EL CONTENIDO DE LA PAGINA  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    background: white;
+    font-size: 62.5%; 
+}
+
+body {    
+    max-width: 1400px;
+    margin: 0 auto;    
+    padding-top: 0.1rem;
+    background: linear-gradient(110deg, 
+        var(--fondo_general_1, hsla(205,85%,88%,0.5)) 0%, 
+        var(--fondo_general_1, hsla(205,85%,88%,0.5)) 40%, 
+        var(--fondo_general_2, hsla(205,15%,88%,0.5)) 40%, 
+        var(--fondo_general_2, hsla(205,15%,88%,0.5)) 100%);
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  LOGO RMG - CONTACTOS.  */
+.barra-superior {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.barra-superior::after {
+    content: "";
+    clear: both;
+    display: block;	
+}
+
+/*  LOGO RMG.  */
+.logo-rmg-superior {
+    float: left;	
+    height: 3rem;
+    width: 25rem;
+    margin: 1rem;
+    margin-top: 0;
+    background: rgb(0, 155, 255);
+    background-image: url("../iconos/logo_dw_blanco.svg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+    transition: background-image 2s ease-in-out;
+}
+
+.logo-rmg-superior:hover {
+    background-image: url("../iconos/logo_dw_negro.svg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+ 
+/*  CONTACTOS.  */
+.contacto-superior {
+    background-size: contain;
+    background-repeat: no-repeat;    
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: width 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.contacto-superior:hover {
+    width: 20rem; 
+    border-radius: 1.5rem;
+}
+
+.contacto-superior .nombre-cuenta {
+    display: none;
+    padding-left: 2.5rem;
+    font-size: 1.5rem;
+    font-family: "Arial Narrow";   
+    font-weight: bold;
+    text-align: center;
+    line-height: 3rem;
+    color: transparent;
+    transition: color 0.3s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+.contacto-superior .nombre-cuenta:hover {
+    color: white;
+}
+
+.contacto-superior:hover .nombre-cuenta {
+    display: block;
+}
+
+#github-superior {
+    float: right;
+    margin-right: 1rem;
+    background-image: url("../iconos/github_mono_c.svg");
+}
+
+#github-superior:hover {
+    background-color: rgb(47, 47, 47);    
+}
+
+#twitter-superior {
+    float: right;
+    margin-right: 1rem;
+    background-image: url("../iconos/twitter_color_c.svg");
+}
+
+#twitter-superior:hover {
+    background-color: rgb(29, 155, 240); 
+}
+
+#facebook-superior {
+    float: right;
+    margin-right: 1rem;
+    background-image: url("../iconos/facebook_color_c.svg");
+}
+
+#facebook-superior:hover {
+    background-color: rgb(24, 119, 242);
+}
+
+#whatsapp-superior {
+    float: right;
+    margin-right: 1rem;
+    background-image: url("../iconos/watsapp_color_c.svg");
+}
+
+#whatsapp-superior:hover {
+    background-color: rgb(35, 197, 66);
+}
+
+#email-superior {
+    float: right;
+    margin-right: 1rem;
+    background-image: url("../iconos/email_color_c.svg");
+}
+
+#email-superior:hover {
+    background-color: rgb(225, 0, 0);
+}
+
+/*  REDES SOCIALES EN DISPOSITIVOS DE 660px O MENOS.  */
+@media only screen and (max-width: 660px) {
+    .contacto-superior {
+        border-radius: 1.5rem;
+    }
+    .contacto-superior:hover {
+        width: 3rem; 
+    }    
+    .contacto-superior:hover .nombre-cuenta {
+        display: none;
+    }
+    #github-superior {
+        background-image: url("../iconos/github_mono_c.svg");
+        transition: background-image 0.5s ease-in-out;
+    } 
+    #github-superior:hover {
+        background-image: url("../iconos/github_color_r.svg");
+        background-color: transparent;
+    }
+    #twitter-superior {
+        background-image: url("../iconos/twitter_mono_r.svg");
+        transition: background-image 0.5s ease-in-out;
+    } 
+    #twitter-superior:hover {
+        background-image: url("../iconos/twitter_color_c.svg");
+    } 
+    #facebook-superior {
+        background-image: url("../iconos/facebook_mono_r.svg");
+        transition: background-image 0.5s ease-in-out;
+    } 
+    #facebook-superior:hover {
+        background-image: url("../iconos/facebook_color_c.svg");
+    }       
+    #whatsapp-superior {
+        background-image: url("../iconos/watsapp_mono_r.svg");
+        transition: background-image 0.5s ease-in-out;
+    } 
+    #whatsapp-superior:hover {
+        background-image: url("../iconos/watsapp_color_c.svg");
+    } 
+    #email-superior {
+        background-image: url("../iconos/email_mono_r.svg");
+        transition: background-image 0.5s ease-in-out;
+    } 
+    #email-superior:hover {
+        background-image: url("../iconos/email_color_c.svg");
+    }  
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  BARRA DE BUSQUEDA.  */
+.barra-busqueda {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.barra-busqueda::after {
+    content: "";
+    clear: both;
+    display: block;	
+}
+
+.barra-busqueda a {  /* ELIMINAR ESTE SELECTOR CUANDO SE ELIMINE EL VINCULO */
+    color: white;
+    text-decoration: none;
+}
+
+input[name=cuadro-busqueda] {
+    float: right;
+    height: 3rem;
+    width: 30rem;
+    max-width: calc(100% - 12rem);
+    padding-left: 0.75rem; 	
+    border: 0.15rem solid #999999;
+    border-right: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    font-size: 1.6rem;
+    transition: 0.8s ease-in-out;	
+}
+
+input[name=cuadro-busqueda]:hover {    
+    outline: none; /* ES NECESARIO PARA PODER CAMBIAR EL border AL HACER focus */
+    border: 0.15rem solid black;
+    border-right: none;
+}
+
+input[name=cuadro-busqueda]:focus {    
+    outline: none; /* ES NECESARIO PARA PODER CAMBIAR EL border AL HACER focus */
+    width: calc(100% - 12rem);
+    border: 0.15rem solid black;
+    border-right: none;
+}
+
+button[name=boton-busqueda] {	
+    float: right;	
+    height: 3rem;
+    width: 10rem;
+    margin-right: 1rem;
+    padding-left: 2.5rem;
+    border: 0.15rem solid #858585;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-size: 1.6rem;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    background-image: url("../iconos/lupa_blanca.svg");
+    background-size: 2.5rem;
+    background-position: center left 0.25rem;
+    background-repeat: no-repeat;
+    background-color: var(--menu_horizontal_1, hsla(205,95%,45%,1.00));	
+    cursor: pointer;
+}
+
+button[name=boton-busqueda]:hover {
+    border: 0.1rem solid black;
+    background-color: var(--menu_horizontal_5, hsla(225,95%,45%,1.00));	
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  TITULO PRINCIPAL.  */
+h1 {
+    margin: 0 1rem;
+    padding: 6.5rem 1rem;   
+    font-family: "Arial Black"; 
+    font-size: 5rem;	
+    text-align: center;      
+    color: #efefef;
+    background-image: url("../imagenes/fondo-encabezado.png");
+    background-position: center;
+    background-color: hsla(205,5%,15%,1.00);
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  BARRA DE NAVEGACION HORIZONTAL SUPERIOR.  */
+.menu-hori {
+    position: sticky;
+    top: 0;
+    margin: 0 1rem;
+    z-index: 1;
+}
+
+.menu-hori ul {
+    overflow: hidden; /* ES NECESARIO PARA QUE EL FONDO DE LA BARRA DE NAVEGACION OCUPE TODO EL ANCHO DE LA VENTANA */
+    padding: 0;
+    background-color: var(--menu_horizontal_1, hsla(205,95%,45%,1.00));
+    list-style: none;
+}
+
+.menu-hori li {
+    float: left;
+}
+
+.boton-fijo-01,
+.boton-desple-01 {
+    display: block;
+    width: 25rem;
+    padding: 1.5rem;  
+    font-size: 1.7rem;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;	
+    color: white;
+}
+
+.boton-fijo-01:hover,
+.boton-desple-01:hover {
+    color: #efefef;
+    background-color: var(--menu_horizontal_2, hsla(205,95%,35%,1.00));
+}
+
+.boton-desple-01::before {
+    content: "► ";
+}
+
+.boton-desple-01:hover::before {
+    content: "▼ ";
+}
+
+/*  SUB-MENUS.  */
+.menu-desple-01:hover .cont-menu-desple-01 {
+    display: block;
+}
+
+.cont-menu-desple-01 {
+    display: none;
+    position: absolute;
+    margin: 0 1.5rem;    
+    box-shadow: 0.4rem 0.8rem 1.6rem rgba(0,0,0,0.2), 0.4rem 0.8rem 1.6rem rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.cont-boto-desple-01 {
+    display: block;
+    width: 22rem;  
+    padding: 1.5rem 0;    
+    font-size: 1.6rem;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--menu_horizontal_3, hsla(205,25%,55%,1.00));
+    border-bottom: 0.1rem solid #dedede; 
+}
+
+.cont-boto-desple-01:last-child {
+    border-bottom: none;
+}
+
+.cont-boto-desple-01:hover {
+    color: #efefef;
+    background-color: var(--menu_horizontal_4, hsla(205,25%,45%,1.00));
+}
+
+/*  BARRA DE NAVEGACION HORIZONTAL SUPERIOR EN DISPOSITIVOS EXTRA PEQUEÑOS.  */
+@media only screen and (max-width: 600px) {
+    .menu-hori li {
+    	float: none; 
+    	border-top: 0.1rem solid #dedede;
+    }
+    .menu-hor li:first-child {
+    	border-top: none;
+    }
+	.boton-fijo-01,
+	.boton-desple-01 {
+        width: 100%;
+        padding: 1rem; 
+    }
+    .cont-menu-desple-01 {
+    	position: static;
+	    margin: 0;
+	    box-shadow: none;
+    }
+    .cont-boto-desple-01 {
+	    width: 100%;
+        padding: 1rem; 
+    }
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  BARRA DE NAVEGACION VERTICAL IZQUIERDA.  */
+.nave-vert ul {
+     list-style: none;	
+     margin: 0.5rem 0.5rem 0 0.5rem;
+     padding: 0;
+}
+
+.nave-vert a {
+    display: block;
+    padding: 1.25rem; 
+    margin-bottom: 1rem;    
+    font-size: 1.6rem;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;	
+    color: white;
+    background-color: var(--menu_vertical_1, hsla(205,5%,45%,1.00));
+    box-shadow: 0.15rem 0.15rem 0.3rem rgba(0,0,0,0.25), 0.15rem 0.15rem 0.3rem rgba(0,0,0,0.5);
+    border-radius: 1rem;
+}
+
+.nave-vert a:hover {
+    background-color: var(--menu_vertical_2, hsla(205,5%,15%,1.00));
+    border-radius: 2.5rem;
+}
+
+/*  BARRA DE NAVEGACION VERTICAL IZQUIERDA EN DISPOSITIVOS EXTRA PEQUEÑOS.  */
+@media only screen and (max-width: 600px) {
+    .nave-vert a {
+        margin-bottom: 0;
+        box-shadow: none;
+        border-bottom: 0.1rem solid #dedede; 
+        border-radius: 0;
+    }
+    .nave-vert a:hover {
+        border-radius: 0;		
+    }
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  ESTAS INSTRUCCIONES CAMBIAN EL COLOR DE LA PÁGINA ACTIVA DE LAS BARRAS DE NAVEGACIÓN.  */
+#index .enlace-activo,
+#planetas_enanos .enlace-activo,
+#planetas_enanos_ceres .enlace-activo,
+#planetas_enanos_pluton .enlace-activo,
+#planetas_enanos_haumera .enlace-activo,
+#planetas_enanos_makemake .enlace-activo,
+#planetas_enanos_eris .enlace-activo,
+#grandes_satelites .enlace-activo,
+#grandes_satelites_tierra .enlace-activo,
+#grandes_satelites_jupiter .enlace-activo,
+#grandes_satelites_saturno .enlace-activo,
+#grandes_satelites_urano .enlace-activo,
+#grandes_satelites_neptuno .enlace-activo,
+#grandes_satelites_pluton .enlace-activo,
+#cuerpos_menores .enlace-activo,
+#cuerpos_menores_asteroides .enlace-activo,
+#cuerpos_menores_transneptunianos .enlace-activo,
+#cuerpos_menores_kuiper .enlace-activo,
+#cuerpos_menores_oort .enlace-activo,
+#el_sol .enlace-activo,
+#mercurio .enlace-activo,
+#venus .enlace-activo,
+#tierra .enlace-activo,
+#marte .enlace-activo,
+#jupiter .enlace-activo,
+#saturno .enlace-activo,
+#urano .enlace-activo,
+#neptuno .enlace-activo {
+    background-color: var(--menu_horizontal_5, hsla(225,95%,45%,1.00));
+}
+
+#index .enlace-activo:hover,
+#planetas_enanos .enlace-activo:hover,
+#planetas_enanos_ceres .enlace-activo:hover,
+#planetas_enanos_pluton .enlace-activo:hover,
+#planetas_enanos_haumera .enlace-activo:hover,
+#planetas_enanos_makemake .enlace-activo:hover,
+#planetas_enanos_eris .enlace-activo:hover,
+#grandes_satelites .enlace-activo:hover,
+#grandes_satelites_tierra .enlace-activo:hover,
+#grandes_satelites_jupiter .enlace-activo:hover,
+#grandes_satelites_saturno .enlace-activo:hover,
+#grandes_satelites_urano .enlace-activo:hover,
+#grandes_satelites_neptuno .enlace-activo:hover,
+#grandes_satelites_pluton .enlace-activo:hover,
+#cuerpos_menores .enlace-activo:hover,
+#cuerpos_menores_asteroides .enlace-activo:hover,
+#cuerpos_menores_transneptunianos .enlace-activo:hover,
+#cuerpos_menores_kuiper .enlace-activo:hover,
+#cuerpos_menores_oort .enlace-activo:hover,
+#el_sol .enlace-activo:hover,
+#mercurio .enlace-activo:hover,
+#venus .enlace-activo:hover,
+#tierra .enlace-activo:hover,
+#marte .enlace-activo:hover,
+#jupiter .enlace-activo:hover,
+#saturno .enlace-activo:hover,
+#urano .enlace-activo:hover,
+#neptuno .enlace-activo:hover  {
+    background-color: var(--menu_horizontal_6, hsla(225,95%,35%,1.00));
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  CONTENIDO PRINCIPAL.  */
+.principal {
+    margin-top: 0.5rem;
+}
+
+.principal h2 {	
+    padding: 1rem 1rem 0.5rem;
+    font-size: 3rem;  
+    font-family: Tahoma;
+    font-weight: 700;
+}
+
+.principal h3 {
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;  
+    font-family: Tahoma;
+    font-weight: 600;
+}
+
+.principal h4 {
+    padding: 0.5rem 1rem;
+    font-size: 2.25rem;  
+    font-family: Tahoma;
+    font-weight: 550;
+}
+
+.principal p {
+    padding: 0.5rem 1rem 1rem;
+    font-size: 1.6rem;  
+    font-family: Tahoma;
+    text-indent: 2.5rem;
+}
+
+.principal p:last-of-type {
+    padding-bottom: 0.5rem;
+}
+
+.principal .especial-1 {
+    margin: 0 1rem 0 3.5rem;
+    padding: 1rem;
+    text-indent: 0;
+    background-color: #dddddd;
+    border-left: 0.5rem solid var(--menu_horizontal_2, hsla(205,95%,35%,1.00));
+    border-radius: 0 1rem 1rem 0;
+}
+
+.principal hr {
+    height: 0.1rem;
+    margin: -0.5rem 1rem 1.25rem;
+    border: 0.15rem solid var(--menu_horizontal_2, hsla(205,95%,35%,1.00));
+    background-color: var(--menu_horizontal_2, hsla(205,95%,35%,1.00));
+}
+
+.principal li {
+    margin-left: 5.5rem;
+    padding: 0 1rem 0.5rem 0;
+    font-size: 1.6rem;  
+    font-family: Tahoma;
+    text-align: justify;
+    list-style: circle;
+}
+
+.principal sub {
+    font-size: 1rem; 
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  SECCIÓN LATERAL DERECHA.  */
+.secundario {
+    margin: 0.5rem;
+    background-color: var(--secundario_1, hsla(205,95%,90%,0.5));  
+    border-radius: 1rem;
+    border: 0.1rem solid var(--menu_horizontal_2, hsla(205,95%,35%,1.00));
+}
+
+.secundario h4 {
+    padding: 0.5rem 1rem;
+    font-size: 2.25rem;  
+    font-family: Tahoma;
+    font-weight: 550;
+}
+
+.secundario h5 {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;  
+    font-family: Tahoma;
+    font-weight: 500;
+}
+
+.secundario p {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;  
+    font-family: Tahoma;
+    text-align: justify;
+    text-indent: 2.5rem;
+}
+
+.secundario p:last-child {
+    padding-bottom: 1rem;
+}
+
+.secundario hr {
+    height: 0.1rem;
+    margin: -0.5rem 1.25rem 1rem;
+    border: 0.15rem solid var(--menu_horizontal_2, hsla(205,95%,35%,1.00));
+    background-color: var(--menu_horizontal_2, hsla(205,95%,35%,1.00));
+}
+
+.lista-1 {
+    margin-left: 3rem;
+    padding: 0 1rem 0.5rem 0;
+    font-size: 1.5rem;  
+    font-family: Tahoma;
+    text-align: justify;
+    list-style: circle;
+}
+
+.lista-2 {
+    margin-left: 4rem;
+    padding: 0 1rem 0.5rem 0;
+    font-size: 1.5rem;  
+    font-family: Tahoma;
+    text-align: justify;
+    list-style: disc;
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  PIE DE PÁGINA.  */
+.pie-general {
+    margin: 0 0.5rem 1rem;
+}
+
+.pie-general p {
+    padding: 8rem 1rem;
+    font-size: 1.5rem;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+}
+
+.pie-01, 
+.pie-02, 
+.pie-03, 
+.pie-04 {
+    height: 20rem;
+    background-color: var(--menu_vertical_2, hsla(205,5%,15%,1.00));	
+}
+
+/*  CONTACTOS.  */
+.pie-03 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 1rem;
+}
+
+.contacto-inferior {    
+    background-size: contain;
+    background-repeat: no-repeat;    
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    transition: width 0.5s ease-in-out;
+    text-decoration: none;
+    transition: transform 0.5s linear;
+    box-shadow: 0 0 0.5rem white;
+}
+
+#github-inferior {
+    background-image: url("../iconos/github_mono_c.svg");
+}
+
+#github-inferior:hover {
+    background-image: url("../iconos/github_color_r_i.svg");       
+    box-shadow: none;
+    transform: rotateX(180deg); 
+}
+
+#twitter-inferior {
+    background-image: url("../iconos/twitter_mono_r.svg");
+}
+
+#twitter-inferior:hover {
+    background-image: url("../iconos/twitter_color_r_i.svg");   
+    box-shadow: none;
+    transform: rotateX(180deg); 
+}
+
+#facebook-inferior {
+    background-image: url("../iconos/facebook_mono_r.svg");
+}
+
+#facebook-inferior:hover {
+    background-image: url("../iconos/facebook_color_r_i.svg");   
+    box-shadow: none;
+    transform: rotateX(180deg); 
+}
+
+#whatsapp-inferior {
+    background-image: url("../iconos/watsapp_mono_r.svg");
+}
+
+#whatsapp-inferior:hover {
+    background-image: url("../iconos/watsapp_color_r_i.svg");   
+    box-shadow: none;
+    transform: rotateX(180deg); 
+}
+
+#email-inferior {
+    background-image: url("../iconos/email_mono_r.svg");
+}
+
+#email-inferior:hover {
+    background-image: url("../iconos/email_color_r_i.svg");   
+    box-shadow: none;
+    transform: rotateX(180deg); 
+}
+
+/*  LOGO RMG.  */
+.pie-04 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo-rmg-inferior {
+    height: 3rem;	
+    width: 25rem;
+    max-width: 90%;
+    background-image: url("../iconos/logo_dw_negro.svg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0.5em;	
+    box-shadow: 0 0 0.5em white;
+    transition: background-image 2s ease-in-out;
+}
+
+.logo-rmg-inferior:hover {
+    background-image: url("../iconos/logo_dw_blanco.svg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  IMAGENES.  */
+.imagen-izquierda {
+    float: left; 
+    margin: 1rem;	
+}
+
+.imagen-derecha {
+    float: right; 
+    margin: 1rem;	
+}
+
+.imagen-centro {
+    text-align: center;
+    margin: 1.5rem;	
+}
+
+img {	
+    max-width: 100%;
+    border-radius: 1.5rem;
+    box-shadow: 0.2rem 0.4rem 0.8rem rgba(0,0,0,0.25), 0.2rem 0.4rem 0.8rem rgba(0,0,0,0.5);
+}
+
+figcaption {
+    max-width: 100%;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    text-align: right;	
+    color: #2f2f2f;
+}
+
+.imagen-centro figcaption {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* ********** ********** ********** ********** ********** */
+/*  BOTON SUBIR.  */
+#subir {
+    position: fixed;
+    bottom: 2rem;
+    right: 4rem;
+    height: 5rem;
+    width: 5rem;
+    font-family: "Arial Black";
+    font-size: 4rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(50, 50, 50, 0.55);
+    background: rgba(150, 150, 150, 0.35);
+    border-radius: 0.5rem;
+    z-index: 5;
+}
+
+#subir:hover {
+    color: white;
+    background: var(--menu_horizontal_5, hsla(225,95%,45%,1.00));
+}
+/* ********** ********** ********** ********** ********** */
+/*  MENSAJE DE ALERTA.  */
+#alerta {	
+    margin: 0 1rem;
+    padding: 0.5rem;
+    color: rgba(175,0,0,1);
+    background-color: rgba(175,0,0,0.15);
+    border: 0.25rem solid rgba(175,0,0,1);
+    border-radius: 1.5rem;
+    background-image: url("../iconos/alerta.svg");
+    background-size: 2rem;
+    background-position: top 1.2rem left 1.5rem;
+    background-repeat: no-repeat;
+}
+
+#alerta p {
+    font-size: 1.8rem;
+    font-family: Cambria, "Times New Roman", serif;
+    letter-spacing: 0.2rem;
+    line-height: 1.25;
+}
+
+#alerta a {
+    color: rgb(0,155,255);
+    text-decoration: none;
+}
+
+#alerta a:hover {
+    color: blue;
+}
+/* ********** ********** ********** ********** ********** */
